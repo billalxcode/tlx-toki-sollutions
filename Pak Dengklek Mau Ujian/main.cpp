@@ -1,16 +1,13 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    int masukan;
-    cin >> masukan;
-
-    if (masukan < -1) {
-        cout << "TIDAK" << endl;
-    } else if (masukan > 0) {
-        cout << "YA" << endl;
+    int n;
+    std::cin >> n;
+    if (n>=0 && n<=100) {
+        std::cout << "YA" << std::endl;
+    } else {
+        std::cout << "TIDAK" << std::endl;
     }
-    
+
     return 0;
 }
